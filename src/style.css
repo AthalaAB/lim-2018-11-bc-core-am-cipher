@@ -1,0 +1,79 @@
+.bg-title{
+  background: #132178;
+   padding: 20px;
+   font-size: 20pt;
+   text-align: center;
+   color: yellow;
+}
+.img1{
+ float:left;
+ width: 200px;
+ height: 300px;
+ padding: 10px;
+ margin: 40px;
+}
+.boton1{
+  width:90px;
+  height:90px;
+  background-color:#03800b;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+}
+#segundaPag{
+  display:none;
+}
+#terceraPag{
+  display:none;
+}
+#num1{
+  float: left;
+  width:200px;
+   margin:40px;
+}
+#msn1{
+  float: left;
+   width:200px;
+   margin:40px;
+}
+#num2{
+  float: left;
+  width:200px;
+   margin:40px;
+}
+#msn2{
+  float: left;
+   width:200px;
+   margin:40px;
+}
+.butt1{
+  width:90px;
+  height:90px;
+  background-color:#03800b;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+}
+.butt2{
+  width:90px;
+  height:90px;
+  background-color:#03800b;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+}
