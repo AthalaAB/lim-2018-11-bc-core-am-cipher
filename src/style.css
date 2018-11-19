@@ -1,21 +1,38 @@
+body{
+   background-image: url(https://flashearcelulares.net/wp-content/uploads/2017/07/whatsapp-messenger-1024x576.jpg);
+   background-size: 400px 200px;
+   width: 800px;
+   margin: 0 auto;
+}
 .bg-title{
-  background: #132178;
+  background: #A51414;
    padding: 20px;
    font-size: 20pt;
+   font-style:Comic;
    text-align: center;
-   color: yellow;
+   color: white;
+}
+h1{
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+h2{
+  text-align: center;
+  padding: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .img1{
- float:left;
- width: 200px;
- height: 300px;
- padding: 10px;
- margin: 40px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  margin: 40px;
 }
 .boton1{
   width:90px;
   height:90px;
   background-color:#03800b;
+  color: white;
   margin: 5px;
   padding:10px;
   -webkit-border-radius: 50px;
@@ -25,29 +42,47 @@
   line-height:32px;
   text-transform: uppercase;
 }
-#segundaPag{
+.boton2{
+  width:90px;
+  height:90px;
+  background-color:#1E5CCF;
+  color: white;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+}
+#right{
+  float: right;
+   width:300px;
+   margin:50px;
+}
+p#right{
+  text-align: justify
+}
+#segunda-Pag{
   display:none;
 }
-#terceraPag{
+#tercera-Pag{
   display:none;
 }
 #num1{
-  float: left;
   width:200px;
    margin:40px;
 }
 #msn1{
-  float: left;
    width:200px;
    margin:40px;
 }
 #num2{
-  float: left;
   width:200px;
    margin:40px;
 }
 #msn2{
-  float: left;
    width:200px;
    margin:40px;
 }
@@ -55,6 +90,7 @@
   width:90px;
   height:90px;
   background-color:#03800b;
+  color: white;
   margin: 5px;
   padding:10px;
   -webkit-border-radius: 50px;
@@ -67,7 +103,8 @@
 .butt2{
   width:90px;
   height:90px;
-  background-color:#03800b;
+  background-color:#1E5CCF;
+  color: white;
   margin: 5px;
   padding:10px;
   -webkit-border-radius: 50px;
@@ -76,4 +113,15 @@
   font-size:11px;
   line-height:32px;
   text-transform: uppercase;
+}
+main{
+   background: #8B8B8B;
+}
+footer{
+   background: black;
+   padding: 1px;
+   font-size: 10pt;
+   font-style: arial;
+   text-align: center;
+   color: white;
 }

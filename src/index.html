@@ -4,57 +4,59 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
   </head>
   <body>
     <header>
-   <h1 class="bg-title"> <strong>BF'S SECRETS</strong>
-   </h1>
+     <h1 class="bg-title"> <strong>MY BF'S SECRETS</strong>
+     </h1>
     </header>
     <main>
-      <div id="primeraPag">
-      <h2>BIENVENIDOS AMIGOS!</h2>
-        <img class= 'img1' src="https://userscontent2.emaze.com/images/2d28e00f-1a15-432b-a5b3-5667804f2097/f244f1f6c7a5fa7a4e08cf3c149eb14c.png"><p>Están hartos de que siempre lean sus mensajes sin permiso y descubran sus secretos?<br/>
-  Díganle adíos a esos días con el cifrado césar!<br/>
-  Pero...¿Cómo funciona?<br/>
-  Primero deberás escoger un número que hará que cada letra de tu mensaje cambie por otra<br/>
-  de acuerdo a él!! ¿No es fabuloso? Pueden decifrar su mensaje aquí mismo, con solo<br/>
-  introducir el mismo número mensaje en el nuevo "código".<br/>
-  VAMOS A EMPEZAR!<br/></p>
-        <button class="boton1" onclick="pagCifrar()">CIFRAR</button><button class="boton1" onclick="pagDescifrar();">DESCIFRAR</button>
+      <div id="primera-Pag">
+        <h2>BIENVENIDOS AMIGOS!</h2>
+          <img class= 'img1' src="https://userscontent2.emaze.com/images/2d28e00f-1a15-432b-a5b3-5667804f2097/f244f1f6c7a5fa7a4e08cf3c149eb14c.png">
+          <div id="right">
+            <p>Están hartos de que siempre lean sus mensajes de WSP o MSN sin permiso y descubran sus secretos?<br/>
+      Díganle adíos a esos días con el cifrado césar! Pero...¿Cómo funciona? Primero deberás escoger un número que hará que cada letra de tu mensaje cambie por otra de acuerdo a él!! ¿No es fabuloso? Pueden decifrar su mensaje aquí mismo, con solo introducir el mismo número mensaje en el nuevo "código". VAMOS A EMPEZAR!</p>
+            <button type="button" class="boton1" onclick="pagCifrar()">CIFRAR</button><button class="boton2" onclick="pagDescifrar();">DESCIFRAR</button>
+          </div>
       </div>
-      <div id="segundaPag">
-        <div id="num1">
-          <form> Número: <br/>
-            <input id="putNumber1" size="15" name="putNumber1" placeholder="Ingresa el Número"><br/><br/><br/>
-            <button class="butt1" onClick = "msnACifrar()">CIFRAR</button>
-          </form>
-        </div>
-        <div id="msn1">
-          <form> Mensaje: <br/>
-          <textarea  name="putMessage1" cols= "50" rows="10"> </textarea>
-          <button class="boton0" onClick = "pag1()">REGRESAR</button>
-          </form>
+      <div id="segunda-Pag">
+          <div id="num1">
+            <form>
+              <label for="put-Number1">Número:</label><br/>
+              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número"><br/><br/><br/>
+              <button type="button" class="butt1" onClick = "msnACifrar()">CIFRAR</button>
+            </form>
+          </div>
+          <div id="msn1">
+            <form>
+              <label for="put-Message2">Mensaje:</label><br/>
+              <textarea  name="put-Message1" cols= "50" rows="10"> </textarea>
+              <button type="button" class="boton0" onClick = "pag1()">REGRESAR</button>
+            </form>
+         </div>
        </div>
-     </div>
-     <div id="terceraPag">
-       <div id="num2">
-         <form> Número: <br/>
-         <input id="putNumber2" size="15" name="putNumber2" placeholder="Ingresa el Número"><br/><br/><br/>
-         <button class="butt2" onClick = "msnADescifrar()">DESCIFRAR</button>
-       </form>
-      </div>
-      <div id="msn1">
-        <form> Mensaje: <br/>
-          <textarea  name="putMessage2" cols= "50" rows="10"> </textarea>
-          <button class="boton0" onClick = "pag1()">REGRESAR</button>
-        </form>
-      </div>
-      </div>
+       <div id="tercera-Pag">
+         <div id="num2">
+           <form>
+             <label for="put-Number2">Número:</label><br/>
+             <input id="put-Number2" size="15" name="putNumber-2" placeholder="Ingresa el Número"><br/><br/><br/>
+             <button type="button" class="butt2" onClick = "msnADescifrar()">DESCIFRAR</button>
+           </form>
+          </div>
+          <div id="msn1">
+            <form>
+            <label for="put-Message2">Mensaje:</label><br/>
+            <textarea  name="put-Message2" cols= "50" rows="10"> </textarea>
+            <button type="button" class="boton0" onClick = "pag1B()">REGRESAR</button>
+            </form>
+          </div>
+        </div>
     </main>
     <footer>
-    ©Copyright 2018 by Athala
+    <p>©Copyright 2018 by Athala</p>
     </footer>
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
   </body>
 </html>
