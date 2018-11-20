@@ -15,11 +15,29 @@ function pag1B(){
    document.getElementById("tercera-Pag").style.display = "none";
 }
 //pasar a cipher.js
-const putNumber1= () => {
+const numP = document.getElementById("put-Number1").value;
+const ingresaMensaje = document.getElementById("ingresa-mensaje");
+const vamosADescifrar = document.getElementById("vamos-descifrar");
+function descifrando (str) {
+  const num = 0;
+  let newStr = "";
+  for ( let i=0; i<str.length; i++ ) {
+    num = str.charCodeAt(i);
+    if ( num >= 65) {
+      num += numP;
+    }
+    if ( num > 90 ) {
+      num -= 26;
+    }
+    newStr += String.fromCharCode(num);
+  }
+  return newStr
+}
 
-}
-function msnACifrar(){
- const texto= document.getElementsByName("put-Message1").value;
- texto.toUpperCase();
- texto.charCodeAt(0);
-}
+vamosADescrifrar.addEventListener("click", (e)=>{
+  e.preventDefault();
+  alert("t");
+  const resultado = descifrado(ingresaMensaje.value);
+  alert(resultado);
+  ingresaMensaje.innerHTML = resultado;
+})

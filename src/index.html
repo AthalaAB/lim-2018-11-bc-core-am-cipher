@@ -23,7 +23,7 @@
       <div id="segunda-Pag">
           <div id="num1">
             <form>
-              <label for="put-Number1"><p>Número:</p>/label>
+              <label for="put-Number1"><p>Número:</p></label>
               <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número"><br/><br/><br/>
               <button type="button" class="butt1" onClick = "msnACifrar()">CIFRAR</button>
             </form>
@@ -38,18 +38,19 @@
        </div>
        <div id="tercera-Pag">
          <div id="num2">
-           <form>
-             <label for="put-Number2"><p>Número:</p></label><br/>
-             <input id="put-Number2" size="15" name="putNumber-2" placeholder="Ingresa el Número"><br/><br/><br/>
-             <button type="button" class="butt2" onClick = "msnADescifrar()">DESCIFRAR</button>
-           </form>
+            <form>
+              <label for="put-Number1"><p>Número:</p></label>
+              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número">
+              <button type="button" class="butt1" id = "vamos-descifrar">DESCIFRAR</button>
+            </form>
           </div>
           <div id="msn1">
             <form>
-            <label for="put-Message2"><p>Mensaje:</p></label><br/>
-            <textarea  name="put-Message2" cols= "50" rows="10"> </textarea>
-            <button type="button" class="boton0" onClick = "pag1B()">REGRESAR</button>
+              <label for="ingresa-mensaje"><p>Mensaje:</p></label>
+              <textarea  id= "ingresa-mensaje" name="put-Message1" cols= "50" rows="10"> </textarea>
             </form>
+            <p id= "resultado-descifrado"></p>
+         </div>
           </div>
         </div>
     </main>
