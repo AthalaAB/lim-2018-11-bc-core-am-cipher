@@ -14,7 +14,10 @@ function pag1B(){
    document.getElementById("primera-Pag").style.display = "block";
    document.getElementById("tercera-Pag").style.display = "none";
 }
-//
+//pasar a cipher.js
+const putNumber1= () => {
+
+}
 function msnACifrar(){
  const texto= document.getElementsByName("put-Message1").value;
  texto.toUpperCase();
