@@ -15,29 +15,46 @@ function pag1B(){
    document.getElementById("tercera-Pag").style.display = "none";
 }
 //pasar a cipher.js
-const numP = document.getElementById("put-Number1").value;
-const ingresaMensaje = document.getElementById("ingresa-mensaje");
-const vamosADescifrar = document.getElementById("vamos-descifrar");
-function descifrando (str) {
-  const num = 0;
+//cifrado en consola por trabajar
+var ingreso= 2
+function cifrando (str) {
+var num = 0;
   let newStr = "";
   for ( let i=0; i<str.length; i++ ) {
     num = str.charCodeAt(i);
     if ( num >= 65) {
-      num += numP;
+      num += ingreso;
     }
     if ( num > 90 ) {
       num -= 26;
     }
     newStr += String.fromCharCode(num);
   }
-  return newStr
+  return newStr;
 }
+ cifrando("HOLA");
 
-vamosADescrifrar.addEventListener("click", (e)=>{
+
+//descifrado
+const resultadoDescifrado = document.getElementById("resultado");
+function descifrando (str , number) {
+var num = 0;
+  let newStr = "";
+  for ( let i=0; i<str.length; i++ ) {
+    num = str.charCodeAt(i);
+    if ( num >= 65) {
+      num -= number;
+    }
+    if ( num > 90 ) {
+      num += 26;
+    }
+    newStr += String.fromCharCode(num);
+  }
+  return newStr;
+}
+vamosADescifrar.addEventListener("click", (e)=>{
   e.preventDefault();
-  alert("t");
-  const resultado = descifrado(ingresaMensaje.value);
-  alert(resultado);
-  ingresaMensaje.innerHTML = resultado;
+  const numP = document.getElementById("put-Number1").value;
+  const ingresaMensaje = document.getElementById("ingresa-mensaje").value;
+  resultadoDescifrado.innerHTML = descifrando(ingresaMensaje , numP);
 })

@@ -25,13 +25,13 @@
             <form>
               <label for="put-Number1"><p>Número:</p></label>
               <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número"><br/><br/><br/>
-              <button type="button" class="butt1" onClick = "msnACifrar()">CIFRAR</button>
+              <button id = "vamos-cifrar" type="button" class="butt1">CIFRAR</button>
             </form>
           </div>
           <div id="msn1">
             <form>
-              <label for="put-Message2"><p>Mensaje:</p></label>
-              <textarea  name="put-Message1" cols= "50" rows="10"> </textarea>
+              <label for="ingresa-mensaje"><p>Mensaje:</p></label>
+              <textarea  name="ingresa-mensaje" cols= "50" rows="10"> </textarea>
               <button type="button" class="boton0" onClick = "pag1()">REGRESAR</button>
             </form>
          </div>
@@ -39,15 +39,18 @@
        <div id="tercera-Pag">
          <div id="num2">
             <form>
-              <label for="put-Number1"><p>Número:</p></label>
-              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número">
-              <button type="button" class="butt1" id = "vamos-descifrar">DESCIFRAR</button>
+              <label for="put-Number2"><p>Número:</p></label>
+              <input id="put-Number2" size="15" name="put-Number2" placeholder="Ingresa el Número">
+              <button id = "vamos-descifrar" type="button" class="butt1" >DESCIFRAR</button>
             </form>
           </div>
           <div id="msn1">
             <form>
-              <label for="ingresa-mensaje"><p>Mensaje:</p></label>
-              <textarea  id= "ingresa-mensaje" name="put-Message1" cols= "50" rows="10"> </textarea>
+              <label for="ingresa-mensaje2"><p>Mensaje:</p></label>
+              <textarea  id= "ingresa-mensaje2" name="ingresa-mensaje2" cols= "50" rows="10"> </textarea>
+              <label for="resultado"><p>Mensaje Real:</p></label>
+              <textarea  id= "resultado" name="put-Message1" cols= "50" rows="10"> </textarea>
+              <button type="button" class="boton0" onClick = "pag1B()">REGRESAR</button>
             </form>
             <p id= "resultado-descifrado"></p>
          </div>
