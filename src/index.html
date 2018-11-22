@@ -15,7 +15,7 @@
         <h2>BIENVENIDOS AMIGOS!</h2>
           <img class= 'img1' src="https://userscontent2.emaze.com/images/2d28e00f-1a15-432b-a5b3-5667804f2097/f244f1f6c7a5fa7a4e08cf3c149eb14c.png">
           <div id="right">
-            <p>Están hartos de que siempre lean sus mensajes de WSP o MSN sin permiso y descubran sus secretos?<br/>
+            <p>Están hartos de que siempre lean sus mensajes de WSP o MSN sin permiso y descubran sus secretos?
       Díganle adíos a esos días con el cifrado césar! Pero...¿Cómo funciona? Primero deberás escoger un número que hará que cada letra de tu mensaje cambie por otra de acuerdo a él!! ¿No es fabuloso? Pueden decifrar su mensaje aquí mismo, con solo introducir el mismo número mensaje en el nuevo "código". VAMOS A EMPEZAR!</p>
             <button type="button" class="boton1" onclick="pagCifrar()">CIFRAR</button><button class="boton2" onclick="pagDescifrar();">DESCIFRAR</button>
           </div>
@@ -24,14 +24,16 @@
           <div id="num1">
             <form>
               <label for="put-Number1"><p>Número:</p></label>
-              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número"><br/><br/><br/>
-              <button id = "vamos-cifrar" type="button" class="butt1">CIFRAR</button>
+              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número">
             </form>
           </div>
           <div id="msn1">
             <form>
               <label for="ingresa-mensaje"><p>Mensaje:</p></label>
-              <textarea  name="ingresa-mensaje" cols= "50" rows="10"> </textarea>
+              <textarea id ="ingresa-mensaje" name="ingresa-mensaje" cols= "50" rows="10"> </textarea>
+              <button id = "vamos-cifrar" type="button" class="butt1">CIFRAR</button>
+              <label for="resultadoC"><p>Mensaje Real:</p></label>
+              <textarea  id= "resultadoC" name= "resultadoC" cols= "50" rows="10"> </textarea>
               <button type="button" class="boton0" onClick = "pag1()">REGRESAR</button>
             </form>
          </div>
@@ -41,18 +43,17 @@
             <form>
               <label for="put-Number2"><p>Número:</p></label>
               <input id="put-Number2" size="15" name="put-Number2" placeholder="Ingresa el Número">
-              <button id = "vamos-descifrar" type="button" class="butt1" >DESCIFRAR</button>
             </form>
           </div>
           <div id="msn1">
             <form>
               <label for="ingresa-mensaje2"><p>Mensaje:</p></label>
               <textarea  id= "ingresa-mensaje2" name="ingresa-mensaje2" cols= "50" rows="10"> </textarea>
+                <button id = "vamos-descifrar" type="button" class="butt2" >DESCIFRAR</button>
               <label for="resultado"><p>Mensaje Real:</p></label>
-              <textarea  id= "resultado" name="put-Message1" cols= "50" rows="10"> </textarea>
+              <textarea  id= "resultado" name= "resultado" cols= "50" rows="10"> </textarea>
               <button type="button" class="boton0" onClick = "pag1B()">REGRESAR</button>
             </form>
-            <p id= "resultado-descifrado"></p>
          </div>
           </div>
         </div>
