@@ -58,10 +58,12 @@ h2{
     background-color: #ffffff;
   }
 #right{
-   float: right;
-   width:300px;
-   margin:50px;
-}
+   position: absolute;
+   padding: 150px;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-20%) translateY(-40%);
+ }
 p#right{
   text-align: justify;
 }
@@ -87,6 +89,40 @@ p#right{
    width:200px;
    margin:40px;
 }
+#resultado{
+  border-radius: 20px;
+  padding: 10px;
+}
+#resultadoC{
+  border-radius: 20px;
+  padding: 10px;
+}
+#ingresa-mensaje{
+  border-radius: 20px;
+  padding: 10px;
+}
+#ingresa-mensaje2{
+  border-radius: 20px;
+  padding: 10px;
+}
+#put-Number1{
+  text-align: center;
+  border-radius: 20px;
+}
+#put-Number2{
+  text-align: center;
+  border-radius: 10px;
+}
+.boton0{
+  text-align: center;
+  padding: 10px;
+  font-weight: 60;
+  font-size: 10px;
+  color: #000000;
+  background-color: #E8EAF3;
+  border-radius: 10px;
+}
+
 .letras{
   font-size: 15pt;
   font-style:Comic;

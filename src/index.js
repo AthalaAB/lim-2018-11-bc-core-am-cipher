@@ -39,13 +39,13 @@ vamosADescifrar.addEventListener("click", ()=>{
 //cifrado
 const resultadoCifrado = document.getElementById("resultadoC");
 function cifrando(ctr,number1) {
-let num1;
+let numC;
   let newCtr = "";
   let texto1;
   for ( let i=0; i<ctr.length; i++ ) {
-    num1 = ctr.charCodeAt(i);
-    if ( num1 >= 65 && num1 <= 90) {
-       texto1 = (( num1 - 65 + number1 ) % 26) + 65;
+    numC = ctr.charCodeAt(i);
+    if ( numC >= 65 && numC <= 90) {
+       texto1 = (( numC - 65 + number1 ) % 26) + 65;
     }
     newCtr += String.fromCharCode(texto1);
   }
