@@ -1,5 +1,5 @@
 body{
-   background-image: url(https://flashearcelulares.net/wp-content/uploads/2017/07/whatsapp-messenger-1024x576.jpg);
+   background: rgb(112, 5, 5);
    background-size: 400px 200px;
    width: 800px;
    margin: 0 auto;
@@ -12,16 +12,13 @@ body{
    text-align: center;
    color: white;
 }
-h1{
-  text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
 h2{
   color: white;
   text-align: center;
-  padding: 20px;
+  margin: 0;
+  font-size: 30px;
   font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-bottom: 20px;
 }
 .img1{
   width: 300px;

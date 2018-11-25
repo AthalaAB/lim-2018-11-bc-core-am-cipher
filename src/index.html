@@ -6,15 +6,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-     <h1 class="bg-title"> <strong>MY BF'S SECRETS</strong>
-     </h1>
-    </header>
     <main>
       <div id="primera-Pag">
-        <h2>BIENVENIDOS AMIGOS!</h2>
-          <img class= 'img1' src="https://okdiario.com/img/2016/12/30/secretos-militares-siglo-xx-655x368.jpg">
-          <div id="right">
+        <h2>CUÉNTAME TU SECRETO</h2>
+          <img class= 'img1' src="logo2.png"
             <p>Están hartos de que siempre lean sus mensajes de WSP o MSN sin permiso y descubran sus secretos?
       Díganle adíos a esos días con el cifrado césar! Pero...¿Cómo funciona? Primero deberás escoger un número que hará que cada letra de tu mensaje cambie por otra de acuerdo a él!! ¿No es fabuloso? Pueden decifrar su mensaje aquí mismo, con solo introducir el mismo número mensaje en el nuevo "código". VAMOS A EMPEZAR!</p>
             <button type="button" class="boton1" onclick="pagCifrar()">CIFRAR</button><button class="boton2" onclick="pagDescifrar();">DESCIFRAR</button>
@@ -24,7 +19,7 @@
           <div id="num1">
             <form>
               <label for="put-Number1"><p class= "letras">Número:</p></label>
-              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número">
+              <input id="put-Number1" type= "text" size="15" name="put-Number1" placeholder="Ingresa el Número">
             </form>
           </div>
           <div id="msn1">
@@ -42,7 +37,7 @@
          <div id="num2">
             <form>
               <label for="put-Number2"><p class= "letras">Número:</p></label>
-              <input id="put-Number2" size="15" name="put-Number2" placeholder="Ingresa el Número">
+              <input id="put-Number2" type= "text" size="15" name="put-Number2" placeholder="Ingresa el Número">
             </form>
           </div>
           <div id="msn1">
@@ -61,7 +56,7 @@
     <footer>
     <p>©Copyright 2018 by Athala</p>
     </footer>
-      <script src="cipher.js"></script>
       <script src="index.js"></script>
+      <script src="cipher.js"></script>
   </body>
 </html>
