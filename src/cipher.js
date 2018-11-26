@@ -9,12 +9,8 @@ window.cipher = {
         if ( numC >= 65 && numC <= 90) {
            texto1 = (( numC - 65 + number1 ) % 26) + 65;
         }
-
-        if ( numC===32){
-          texto1= numC;
-        }
-        if( numC>=48 && numC<=57){
-          texto1 = numC
+        if( numC>=32 && numC<=63){
+          texto1 = numC;
         }
         newCtr += String.fromCharCode(texto1);
       }
@@ -30,11 +26,8 @@ window.cipher = {
         if ( num >= 65 && num <= 90) {
            texto = (( num - 90 - number ) % 26) + 90;
         }
-        if ( num===32){
+        if ( num>=32 && num<=63){
           texto= num;
-        }
-        if( num>=48 && num<=57){
-          texto = num
         }
         newStr += String.fromCharCode(texto);
       }
