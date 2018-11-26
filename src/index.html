@@ -6,62 +6,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-     <h1 class="bg-title"> <strong>MY BF'S SECRETS</strong>
-     </h1>
-    </header>
-    <main>
+      <div class="social-bar">
+          <a href="https://facebook.com/" class="icon icon-facebook" target="_blank"><img src="facebook.png"></a>
+          <a href="https://web.whatsapp.com/" class="icon icon-whatsapp" target="_blank"><img src="whatsapp.png"></a>
+          <a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank"><img src="instagram.png"></a>
+          <a href="https://twitter.com/" class="icon icon-twitter" target="_blank"><img src="twitter.png"></a>
+        </div>
+      <h2>CUÉNTAME TU SECRETO</h2>
       <div id="primera-Pag">
-        <h2>BIENVENIDOS AMIGOS!</h2>
-          <img class= 'img1' src="https://okdiario.com/img/2016/12/30/secretos-militares-siglo-xx-655x368.jpg">
-          <div id="right">
-            <p>Están hartos de que siempre lean sus mensajes de WSP o MSN sin permiso y descubran sus secretos?
-      Díganle adíos a esos días con el cifrado césar! Pero...¿Cómo funciona? Primero deberás escoger un número que hará que cada letra de tu mensaje cambie por otra de acuerdo a él!! ¿No es fabuloso? Pueden decifrar su mensaje aquí mismo, con solo introducir el mismo número mensaje en el nuevo "código". VAMOS A EMPEZAR!</p>
-            <button type="button" class="boton1" onclick="pagCifrar()">CIFRAR</button><button class="boton2" onclick="pagDescifrar();">DESCIFRAR</button>
-          </div>
+        <form class="primer-form">
+            <p>Hola! "Cuentame tu secreto" te ayudará a enviar mensajes que solo los que tú quieras podrán descifrar</p>
+            <p>Pero...¿Cómo funciona?</p>
+            <p>- Ingresa un número</p>
+            <p>- Ingresa el mensaje</p>
+            <p> Y observa la magia!</p>
+            <p>Averígua más dando click <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Aquí</a></p>
+            <input type="button" class="boton1" value="CIFRAR" id="pag-cifrar">
+            <input type="button" class="boton2" value="DESCIFRAR" id="pag-descifrar">
+        </form>
       </div>
       <div id="segunda-Pag">
-          <div id="num1">
-            <form>
-              <label for="put-Number1"><p class= "letras">Número:</p></label>
-              <input id="put-Number1" size="15" name="put-Number1" placeholder="Ingresa el Número">
+            <form class="segundo-form">
+              <label for="put-Number1"><p class= "letras-f">Número:</p></label>
+              <input id="put-Number1" type= "text" size="15" name="put-Number1" placeholder="Ingresa el Número" required>
+              <label for="ingresa-mensaje"><p class= "letras-f">Mensaje:</p></label>
+              <textarea id ="ingresa-mensaje" class="text-tarea" name="ingresa-mensaje" placeholder="Ingresa tu mensaje" cols= "50" rows="10" required></textarea>
+              <input id = "vamos-cifrar" type="button" class="butt1" value="CIFRAR">
+              <label for="resultadoC"><p class= "letras-f">Mensaje Real:</p></label>
+              <textarea  id= "resultadoC" class="text-tarea" name= "resultadoC" cols= "50" rows="10"> </textarea>
+              <input type="button" class="boton0" value="REGRESAR" id="a-pag1">
             </form>
-          </div>
-          <div id="msn1">
-            <form>
-              <label for="ingresa-mensaje"><p class= "letras">Mensaje:</p></label>
-              <textarea id ="ingresa-mensaje" name="ingresa-mensaje" cols= "50" rows="10"> </textarea>
-              <button id = "vamos-cifrar" type="button" class="butt1">CIFRAR</button>
-              <label for="resultadoC"><p class= "letras">Mensaje Real:</p></label>
-              <textarea  id= "resultadoC" name= "resultadoC" cols= "50" rows="10"> </textarea>
-              <button type="button" class="boton0" onClick = "pag1()">REGRESAR</button>
-            </form>
-         </div>
        </div>
        <div id="tercera-Pag">
-         <div id="num2">
-            <form>
-              <label for="put-Number2"><p class= "letras">Número:</p></label>
-              <input id="put-Number2" size="15" name="put-Number2" placeholder="Ingresa el Número">
+            <form class="cuarto-form">
+              <label for="put-Number2"><p class= "letras-f">Número:</p></label>
+              <input id="put-Number2" type= "text" size="15" name="put-Number2" placeholder="Ingresa el Número" required>
+              <label for="ingresa-mensaje2"><p class= "letras-f">Mensaje:</p></label>
+              <textarea  id= "ingresa-mensaje2" class="text-tarea" name="ingresa-mensaje2" cols= "50" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
+              <input id = "vamos-descifrar" type="button" class="butt2" value= "DESCIFRAR" >
+              <label for="resultado"><p class= "letras-f">Mensaje Real:</p></label>
+              <textarea  id= "resultado" class="text-tarea" name= "resultado" cols= "50" rows="10"> </textarea>
+              <input type="button" class="boton0" value="REGRESAR" id="b-pag1">
             </form>
-          </div>
-          <div id="msn1">
-            <form>
-              <label for="ingresa-mensaje2"><p class= "letras">Mensaje:</p></label>
-              <textarea  id= "ingresa-mensaje2" name="ingresa-mensaje2" cols= "50" rows="10"> </textarea>
-                <button id = "vamos-descifrar" type="button" class="butt2" >DESCIFRAR</button>
-              <label for="resultado"><p class= "letras">Mensaje Real:</p></label>
-              <textarea  id= "resultado" name= "resultado" cols= "50" rows="10"> </textarea>
-              <button type="button" class="boton0" onClick = "pag1B()">REGRESAR</button>
-            </form>
-         </div>
-          </div>
+            
         </div>
-    </main>
     <footer>
-    <p>©Copyright 2018 by Athala</p>
+    <p class="abajo">©Copyright 2018 by Athala</p>
     </footer>
-      <script src="cipher.js"></script>
       <script src="index.js"></script>
+      <script src="cipher.js"></script>
   </body>
 </html>
