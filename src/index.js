@@ -40,8 +40,8 @@ vamosADescifrar.addEventListener("click", ()=>{
 const resultadoCifrado = document.getElementById("resultadoC");
 function cifrando(ctr,number1) {
 let numC;
-  let newCtr = "";
-  let texto1;
+let texto1;
+let newCtr = "";
   for ( let i=0; i<ctr.length; i++ ) {
     numC = ctr.charCodeAt(i);
     if ( numC >= 65 && numC <= 90) {
