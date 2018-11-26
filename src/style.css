@@ -1,43 +1,103 @@
 body{
-   background: rgb(112, 5, 5);
-   background-size: 400px 200px;
-   width: 800px;
-   margin: 0 auto;
+   background-size: 100vw 100vh;
+   background-image: url(madera.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
 }
-.bg-title{
-  background: #A51414;
-   padding: 20px;
-   font-size: 20pt;
-   font-style:Comic;
-   text-align: center;
-   color: white;
+form{
+  width: 450px;
+  margin: auto;
+  background-image: url(papel.jpg);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20PX;
+  border-radius: 20px;
 }
+/*Barra redes sociales */
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 15%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+  background: #2E406E;
+  padding: 20px;
+  width: 3px;
+  height: 30px;
+}
+
+.icon-whatsapp {
+  background: rgb(16, 175, 50);
+  padding: 20px;
+  width: 3px;
+  height: 30px;
+}
+
+.icon-instagram {
+  background: rgb(168, 89, 15);
+  padding: 20px;
+  width: 3px;
+  height: 30px;
+}
+
+.icon-twitter {
+  background: rgb(78, 169, 255);
+  padding: 20px;
+  width: 3px;
+  height: 30px;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
 h2{
   color: white;
   text-align: center;
   margin: 0;
   font-size: 30px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 20px;
 }
-.img1{
-  width: 300px;
-  height: 300px;
-  padding: 10px;
-  margin: 40px;
-}
+
 .boton1{
   text-decoration: none;
       padding: 10px;
       font-weight: 600;
       font-size: 20px;
       color: #ffffff;
-      background-color: #18BA2C;
+      background-color: rgb(209, 28, 28);
       border-radius: 6px;
-      border: 2px solid #0D7107;
+      border: 2px solid rgb(85, 6, 6);
   }
   .boton1:hover{
-    color: #0D7107;
+    color: rgb(85, 6, 6);
+    cursor: pointer;
     background-color: #ffffff;
   }
 .boton2{
@@ -45,46 +105,28 @@ h2{
       padding: 10px;
       font-weight: 600;
       font-size: 20px;
-      color: #ffffff;
-      background-color: #1E5CCF;
+      color: rgb(63, 0, 0);
+      background-color: #ffffff;
       border-radius: 6px;
-      border: 2px solid #042A71;
+      border: 2px solid rgb(223, 20, 20);
   }
   .boton2:hover{
-    color: #042A71;
-    background-color: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(63, 0, 0);
   }
-#right{
-   position: absolute;
-   padding: 150px;
-   left: 50%;
-   top: 50%;
-   transform: translateX(-20%) translateY(-40%);
- }
-p#right{
-  text-align: justify;
+p{
+  color: #252424;
+  text-align: center;
+}
+p.abajo{
+  color: #ffffff;
 }
 #segunda-Pag{
   display:none;
 }
 #tercera-Pag{
   display:none;
-}
-#num1{
-  width:200px;
-   margin:40px;
-}
-#msn1{
-   width:200px;
-   margin:40px;
-}
-#num2{
-  width:200px;
-   margin:40px;
-}
-#msn2{
-   width:200px;
-   margin:40px;
 }
 #resultado{
   border-radius: 20px;
@@ -103,28 +145,44 @@ p#right{
   padding: 10px;
 }
 #put-Number1{
-  text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin: 5px;
 }
 #put-Number2{
-  text-align: center;
   border-radius: 10px;
+  width: 30%;
+  margin: 5px;
 }
 .boton0{
   text-align: center;
   padding: 10px;
   font-weight: 60;
-  font-size: 10px;
-  color: #000000;
-  background-color: #E8EAF3;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: rgb(34, 31, 31);
   border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 120px;
 }
-
+.boton0:hover{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+}
 .letras{
   font-size: 15pt;
   font-style:Comic;
-  color: white;
+  color: rgb(31, 28, 28);
   font-family: Arial, sans-serif;
+}
+.letras-f{
+  font-size: 13pt;
+  font-style:Comic;
+  color: rgb(31, 28, 28);
+  font-family: Arial, sans-serif;
+  text-align: left;
 }
 .butt1{
   text-decoration: none;
@@ -132,12 +190,16 @@ p#right{
       font-weight: 600;
       font-size: 20px;
       color: #ffffff;
-      background-color: #18BA2C;
+      background-color: rgb(209, 28, 28);
       border-radius: 6px;
-      border: 2px solid #0D7107;
+      border: 2px solid rgb(85, 6, 6);
+      margin-top: 20px;
+      margin-bottom: 5px;
+      margin-left: 120px;
 }
 .butt1:hover{
-    color: #0D7107;
+    color: rgb(85, 6, 6);
+    cursor: pointer;
     background-color: #ffffff;
   }
 .butt2{
@@ -149,21 +211,28 @@ p#right{
       background-color: #1E5CCF;
       border-radius: 6px;
       border: 2px solid #042A71;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      margin-left: 120px;
   }
   .butt2:hover{
     color: #042A71;
+    cursor: pointer;
     background-color: #ffffff;
   }
-main{
-   background: #000000;
-     color: white;
-     font-family: Arial, Helvetica, sans-serif;
+input{
+  width: 40%;
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 3px;
 }
-footer{
-   background: red;
-   padding: 1px;
-   font-size: 10pt;
-   font-style: arial;
-   text-align: center;
-   color: white;
+.text-tarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+@media(max-width:480px){
+  form{
+    width: 100%;
+  }
 }
