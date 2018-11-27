@@ -201,18 +201,18 @@ p.abajo{
       padding: 10px;
       font-weight: 600;
       font-size: 20px;
-      color: #ffffff;
-      background-color: #1E5CCF;
+      color: rgb(63, 0, 0);
+      background-color: #ffffff;
       border-radius: 6px;
-      border: 2px solid #042A71;
+      border: 2px solid rgb(223, 20, 20);
       margin-top: 20px;
       margin-bottom: 5px;
       margin-left: 120px;
   }
   .butt2:hover{
-    color: #042A71;
+    color: #ffffff;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: rgb(63, 0, 0);
   }
 input{
   width: 40%;
