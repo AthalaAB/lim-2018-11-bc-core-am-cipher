@@ -16,11 +16,28 @@ vamosAPag1A.addEventListener("click", function pag1(){
    document.getElementById("segunda-Pag").style.display = "none";
 })
 
+let btnCopy = document.getElementById("btn-copy");
+
+btnCopy.addEventListener("click", () => {
+   var aux = document.getElementById("resultadoC");
+   aux.select();
+   // Copia el texto seleccionado
+   document.execCommand("copy");
+});
+
 const vamosAPag1B= document.getElementById("b-pag1");
 vamosAPag1B.addEventListener("click", function pag1B(){
    document.getElementById("primera-Pag").style.display = "block";
    document.getElementById("tercera-Pag").style.display = "none";
 })
+let btnCopyD = document.getElementById("btn-copyD");
+
+btnCopyD.addEventListener("click", () => {
+   var aux = document.getElementById("resultado");
+   aux.select();
+   // Copia el texto seleccionado
+   document.execCommand("copy");
+});
 //descifrado
 const resultadoDescifrado = document.getElementById("resultado");
 
@@ -38,3 +55,6 @@ vamosACifrar.addEventListener("click", ()=>{
   const ingresaMensaje1 = document.getElementById("ingresa-mensaje").value;
   resultadoCifrado.innerHTML = cipher.encode(ingresaMensaje1,parseInt(numS));
 })
+
+
+
