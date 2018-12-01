@@ -1,5 +1,5 @@
 window.cipher = {
-  encode:function cifrando(ctr,number1) {
+  encode:function cifrando(number1, ctr) {
     let numC;
       let newCtr = "";
       let texto1; /*para aplicar la fórmula*/
@@ -18,7 +18,7 @@ window.cipher = {
       }
       return newCtr;
     },
-  decode: function descifrando(str,number) {
+  decode: function descifrando(number,str) {
     let num;
       let newStr = "";
       let texto;

@@ -38,6 +38,14 @@ btnCopyD.addEventListener("click", () => {
    // Copia el texto seleccionado
    document.execCommand("copy");
 });
+//cifrado
+const resultadoCifrado = document.getElementById("resultadoC");
+const vamosACifrar = document.getElementById("vamos-cifrar");
+vamosACifrar.addEventListener("click", ()=>{
+  const numS = document.getElementById("put-Number1").value;
+  const ingresaMensaje1 = document.getElementById("ingresa-mensaje").value;
+  resultadoCifrado.innerHTML = cipher.encode(parseInt(numS),ingresaMensaje1);
+})
 //descifrado
 const resultadoDescifrado = document.getElementById("resultado");
 
@@ -45,16 +53,9 @@ const vamosADescifrar = document.getElementById("vamos-descifrar");
 vamosADescifrar.addEventListener("click", ()=>{
   const numP = document.getElementById("put-Number2").value;
   const ingresaMensaje = document.getElementById("ingresa-mensaje2").value;
-  resultadoDescifrado.innerHTML = cipher.decode(ingresaMensaje,parseInt(numP));
+  resultadoDescifrado.innerHTML = cipher.decode(parseInt(numP),ingresaMensaje);
 })
-//cifrado
-const resultadoCifrado = document.getElementById("resultadoC");
-const vamosACifrar = document.getElementById("vamos-cifrar");
-vamosACifrar.addEventListener("click", ()=>{
-  const numS = document.getElementById("put-Number1").value;
-  const ingresaMensaje1 = document.getElementById("ingresa-mensaje").value;
-  resultadoCifrado.innerHTML = cipher.encode(ingresaMensaje1,parseInt(numS));
-})
+
 
 
 
