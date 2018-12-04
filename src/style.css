@@ -179,6 +179,7 @@ p.abajo{
   color: rgb(31, 28, 28);
   font-family: Courgette;
   text-align: left;
+  padding: 10px;
 }
 .butt1{
   text-decoration: none;
